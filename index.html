@@ -10,11 +10,34 @@
 </head>
 <body>
     <div class="sidebar">
-        <img src="html-folder.png" alt="Изображение" width="60%" height="auto">
+        <a href="./Content/base.html" target="contentFrame"> 
+            <img src="./Assets/html-folder.png" alt="image" width="60%" height="auto">
+        </a>
         <ul class="menu">
-            <li><a href="content1.html" target="contentFrame">Item 1</a></li>
-            <li><a href="content2.html" target="contentFrame">Item 2</a></li>
-            <li><a href="content3.html" target="contentFrame">Item 3</a></li>
+            <li style="margin-bottom: 15px;">
+                <a class="item" href="./Content/content1.html" target="contentFrame">Диагностика жесткие дисков.</a>
+                <ul>
+                    <li><a class="subitem" href="subpage1-1.html" target="contentFrame">smartmontools</a></li>
+                    <li><a class="subitem" href="subpage1-2.html" target="contentFrame">GSmartControl</a></li>
+                    <li><a class="subitem" href="subpage1-3.html" target="contentFrame">HDDTemp</a></li>
+                </ul>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a class="item" href="./Content/content2.html" target="contentFrame">Архивация данных и работа с архивами.</a>
+                <ul>
+                    <li><a class="subitem" href="subpage2-1.html" target="contentFrame">File Roller</a></li>
+                    <li><a class="subitem" href="subpage2-2.html" target="contentFrame">7-Zip</a></li>
+                    <li><a class="subitem" href="subpage2-3.html" target="contentFrame">PeaZip</a></li>
+                </ul>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a class="item" href="./Content/content3.html" target="contentFrame">Антивирусная безопасность. </a>
+                <ul>
+                    <li><a class="subitem" href="subpage3-1.html" target="contentFrame">ClamAV</a></li>
+                    <li><a class="subitem" href="subpage3-2.html" target="contentFrame">Sophos Antivirus</a></li>
+                    <li><a class="subitem" href="subpage3-3.html" target="contentFrame">ESET NOD32 Antivirus</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     <div class="main">
@@ -22,7 +45,7 @@
             <span>Курсовая работа Габрусевича Ивана ИЦТМС 3-1</span>
         </div>
         <div class="content">
-            <iframe name="contentFrame" frameborder="0" width="100%" height="100%"></iframe>
+            <iframe name="contentFrame" src="./Content/base.html" frameborder="0" width="100%" height="100%"></iframe>
         </div>
     </div>
 </body>
